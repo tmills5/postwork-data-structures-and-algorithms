@@ -1,5 +1,11 @@
 function reverseString(str) {
-  // type your code here
+  let reverse = '';
+
+  for ( let i = str.length - 1; i > -1; --i ) {
+    
+    reverse = reverse + str[i]
+  }
+      return reverse;
 }
 
 if (require.main === module) {
@@ -17,3 +23,8 @@ module.exports = reverseString;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// start at the end and work backwards
+// initialize new empty string
+// take each letter and place them in a new string
+// return that new string
