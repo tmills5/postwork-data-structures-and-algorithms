@@ -1,11 +1,11 @@
 function reverseString(str) {
-  let reverse = '';
+  let reversedStr = ''
 
-  for ( let i = str.length - 1; i > -1; --i ) {
-    
-    reverse = reverse + str[i]
-  }
-      return reverse;
+  for (let i=str.length-1; i > -1; --i) {
+    reversedStr += str[i]
+  };
+
+  return reversedStr
 }
 
 if (require.main === module) {
